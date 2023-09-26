@@ -23,6 +23,15 @@ This is experimental and subject to change. Use at your own risk.
 | **Search by ssl name**                | `certsio search ssl_names www.github.com`                                                            | 
 | **Print version**                     | `certsio version`                                                                                    |
 
+### Configuration File:
+
+Get an API Key from [here](https://rapidapi.com/certsio-certsio-default/api/certs-io1/pricing)
+
+certsio automatically looks for a configuration file at `$HOME/.certsio.toml` or `%USERPROFILE%\.certsio.toml`. You must specify your API key in this configuration file for the client to work. 
+
+An example configuration file can be found in the repository.
+
+
 ## Installation:
 ### From source:
 ```
