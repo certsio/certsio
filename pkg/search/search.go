@@ -13,7 +13,7 @@ import (
 	"github.com/certsio/certsio/pkg/certificate"
 )
 
-const _baseURL = "https://certs-io.p.rapidapi.com/certificates"
+const _baseURL = "https://certs-io1.p.rapidapi.com/certificates"
 
 type Config struct {
 	maxPages uint64
