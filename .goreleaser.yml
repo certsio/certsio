@@ -1,0 +1,28 @@
+before:
+  hooks:
+    - go mod download
+builds:
+  - binary: certsio
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - 386
+    ignore:
+      - goos: darwin
+        goarch: 386
+    main: ./cmd/certsio/
+archives:
+  - id: tgz
+    format: tar.gz
+    replacements:
+        darwin: macOS
+    format_overrides:
+        - goos: windows
+          format: zip
+
+signs:
+  - artifacts: checksum
+    args: [ "--batch", "-u", "{{ .Env.GPG_FINGERPRINT }}", "--output", "${signature}", "--detach-sign", "${artifact}" ]
