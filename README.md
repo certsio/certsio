@@ -40,7 +40,7 @@ $ go install github.com/certsio/certsio/cmd/certsio@latest
 ### From github :
 ```
 git clone https://github.com/certsio/certsio.git; \
-cd certsio/certsio/cmd; \
+cd certsio/cmd/certsio; \
 go build; \
 sudo mv certsio /usr/local/bin/; \
 certsio --version;
