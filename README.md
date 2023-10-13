@@ -3,9 +3,6 @@ The command-line client and library for using the certs.io API.
 
 Search the entire internet by data in TLS certificates.
 
-# WARNING:
-This is experimental and subject to change. Use at your own risk. 
-
 # Resources
 - [Usage](#usage)
 
